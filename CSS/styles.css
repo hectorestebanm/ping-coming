@@ -1,0 +1,225 @@
+:root
+{
+    /* ## Colors */
+    /* ### Primary */
+    --Blue: hsl(223, 87%, 63%);
+    --Light-Blue: rgba(79, 125, 243, 0.8);
+    /* ### Secondary */
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    /* ### Neutral */
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body
+{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* Estilos para los encabezados */
+.ping
+{
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.ping__h1
+{
+    font-size: 24px;
+}
+
+.ping__punto
+{
+    color: var(--Blue);
+}
+
+.ping__h2
+{
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.ping__span
+{
+    color: black;
+    font-weight: 700;
+}
+
+.ping__h3
+{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* Estilos para el form */
+.formulario
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 85%;
+}
+
+/* Estilo para los campos del form */
+.formulario__input
+{
+    font-size: 12px;
+    width: 79%;
+    padding: 10px 25px;
+    margin: 15px 0;
+    border-radius: 20px;
+    border: 1px solid var(--Pale-Blue);
+}
+
+.formulario__label
+{
+    display: none;
+    font-size: 10px;
+    color: var(--Light-Red);
+    margin: -10px 0 20px;
+}
+
+.formulario__submit
+{
+    color: white;
+    background-color: var(--Blue);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+.formulario__submit:hover
+{
+    cursor: pointer;
+    background-color: var(--Light-Blue);
+}
+
+.ping__imagen
+{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.ping__copy
+{
+    font-size: 10px;
+    color: var(--Gray);
+}
+
+/* Estilo para los enlaces a redes sociales */
+.iconos
+{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.icon-facebook
+{
+    font-size: 16px;
+    padding: 5px;
+    color: var(--Blue);
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+}
+
+.icon-facebook:hover
+{
+    color: white;
+    background-color: var(--Blue);
+    border: none;
+}
+
+.icon-twitter
+{
+    font-size: 16px;
+    padding: 5px;
+    color: var(--Blue);
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+}
+
+.icon-twitter:hover
+{
+    color: white;
+    background-color: var(--Blue);
+    border: none;
+}
+
+.icon-instagram
+{
+    font-size: 16px;
+    padding: 5px;
+    color: var(--Blue);
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+}
+
+.icon-instagram:hover
+{
+    color: white;
+    background-color: var(--Blue);
+    border: none;
+}
+
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
+
+/* Mediaquery para pantallas mayores a 768px */
+@media (min-width: 768px)
+{
+    .ping__h1
+    {
+        font-size: 30px;
+    }
+    .ping__h2
+    {
+        font-size: 42px;
+    }
+    .ping__h3
+    {
+        font-size: 16px;
+    }
+    .formulario
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        margin: 30px 0 70px;
+    }
+    .formulario__input
+    {
+        margin: 0;
+        width: 74%;
+        font-size: 14px;
+    }
+    .formulario__label
+    {
+        margin: 14px 0 0;
+    }
+    .formulario__submit
+    {
+        margin-bottom: 0;
+        width: 85%;
+        height: fit-content;
+        font-size: 14px;
+    }
+}
